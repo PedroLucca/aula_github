@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import funcionalidades.CadastrarCliente;
+import funcionalidades.VerificarSaldo;
 
 public class Main {
 
@@ -15,9 +16,12 @@ public class Main {
 					CadastrarCliente cadastro =  new CadastrarCliente();
 					cadastro.cadastrar_cliente();
 					break;
-        case 5:
-				  Deposito novo = new Deposito(50); 
-				  break;
+				case 3:
+					VerificarSaldo saldo = new VerificarSaldo();
+					break;
+        		case 5:
+					Deposito novo = new Deposito(50); 
+					break;
 				default:
 					break;
 			}

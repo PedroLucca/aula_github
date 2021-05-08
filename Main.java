@@ -19,11 +19,15 @@ public class Main {
 				case 3:
 					VerificarSaldo saldo = new VerificarSaldo();
 					break;
-        		case 5:
-					Deposito novo = new Deposito(50); 
-					break;
+        case 4:
+					Saque novoSaque = new Saque(50);
+           break;
+        case 5:
+				  Deposito novoDeposito = new Deposito(50); 
+				  break;
 				default:
 					break;
+				
 			}
 		}
 	}

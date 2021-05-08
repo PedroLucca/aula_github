@@ -13,7 +13,7 @@ public class Main {
 				System.exit(0);
 				break;
 			case 5:
-				Deposito novo = new Deposito(50);
+				Deposito novo = new Deposito(50); 
 				break;
 			default:
 				System.out.println("Opção invalida");

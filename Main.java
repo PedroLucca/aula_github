@@ -15,11 +15,13 @@ public class Main {
 					CadastrarCliente cadastro =  new CadastrarCliente();
 					cadastro.cadastrar_cliente();
 					break;
-        case 5:
-				  Deposito novo = new Deposito(50); 
+        		case 5:
+				  Deposito novoDeposito = new Deposito(50); 
 				  break;
 				default:
 					break;
+				case 4:
+					Saque novoSaque = new Saque(50);
 			}
 		}
 	}

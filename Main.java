@@ -1,6 +1,9 @@
 import java.util.Arrays;
 import funcionalidades.CadastrarCliente;
+import funcionalidades.Deposito;
+import funcionalidades.Saque;
 import funcionalidades.VerificarSaldo;
+import funcionalidades.VerificarExtrato;
 
 public class Main {
 
@@ -14,20 +17,22 @@ public class Main {
 					break;
 				case 2:
 					CadastrarCliente cadastro =  new CadastrarCliente();
-					cadastro.cadastrar_cliente();
 					break;
 				case 3:
 					VerificarSaldo saldo = new VerificarSaldo();
 					break;
-        case 4:
+				case 4:
 					Saque novoSaque = new Saque(50);
-           break;
-        case 5:
-				  Deposito novoDeposito = new Deposito(50); 
-				  break;
+					break;
+				case 5:
+					Deposito novoDeposito = new Deposito(50); 
+					break;
+				case 6:
+					VerificarExtrato extrato = new VerificarExtrato("123.000.000-01");
+					System.out.println("Valor final: " + extrato.getValor_final() + "\n");
+					break;
 				default:
 					break;
-				
 			}
 		}
 	}

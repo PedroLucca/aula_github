@@ -1,3 +1,5 @@
+package funcionalidades;
+
 public class Deposito {
    private int valor;
    public Deposito(int valor){
